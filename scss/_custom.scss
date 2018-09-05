@@ -1,1 +1,151 @@
-$blue: red;
+$prop: #387abc;
+// #carouselExampleIndicators img{
+// 	height: 30%;
+// }
+
+
+.carousel.fade {
+	opacity: 1;
+}
+.carousel.fade .item {
+   transition: opacity ease-out .7s;
+   left: 0;
+   opacity: 0; /* hide all slides */
+   top: 0;
+   position: absolute;
+   width: 100%;
+   display: block;
+}
+.carousel.fade .item:first-child {
+   top: auto;
+   opacity: 1; /* show first slide */
+   position: relative;
+}
+.carousel.fade .item.active {
+   opacity: 1;
+}
+
+
+
+
+
+.navbar{
+	// position: fixed;
+	z-index: 9999;
+	width: 100%;
+}
+.bg-light{
+	background-color:$prop !important;
+	opacity: 1;
+}
+.navbar{ img{
+	height: 3.5rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 2rem; 
+}}
+
+.navbar{
+	.dropdown-menu{
+		img{
+			height: 2rem;
+			// margin-right:0.05rem;
+			padding-right: 0.1rem;
+			// float:right;
+			margin-left: 3rem;
+		}
+	}
+}
+.d-block{
+	height: 40rem;
+}
+.nav-link{
+	color: #e3e3e3 !important;
+}
+#carouselExampleIndicators{
+	padding-top: 4.5rem;
+}
+// .navbar .btn{
+// 	background-color: black;
+// 	color: white;
+// 	border: 0.15rem solid white;
+// }
+.card p{
+color: #3e4551;
+}
+
+.navbar-toggler{
+	background-color:$prop;
+}
+.navbar-toggler-icon{
+	color: white;
+}
+.g-pt-100 .d-block{
+	margin-top: 1rem;
+	height: 20rem;
+	margin-bottom: 1rem;
+}
+.mb-0{
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+}
+.g-pt-100 .btn{
+	margin-top: 2rem;
+	text-transform: lowercase;
+	margin-bottom: 1rem;
+	float: bottom;
+	float: right;
+}
+.mt-3 p{
+	font-size: 0.75rem;
+}
+.mt-3 a{
+	text-decoration: none; 
+}
+.mt-3 a:hover{
+	color: $prop;
+}
+.g-pt-100 .mb-0{
+	color: #3e4551; 
+}
+.ml-lg-0{ a{
+	cursor: pointer; 
+}
+i{
+	color:$prop;
+}}
+footer{
+background-color: #3e4551 !important;
+}
+footer h5,p,a{
+	color: white;
+}
+footer h6{
+	color: $prop;
+}
+.sociallinks a{
+	cursor: pointer;
+}
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+	.d-block{
+		height: 20rem;
+	}
+	.bg-light{
+		background-color:$prop !important;
+		opacity: 1;
+	}
+	.g-pt-100 .d-block{
+		margin-top: 1rem;
+		height: 15rem;
+	}
+
+	.g-py-100 .d-block{
+		margin-top: 1rem;
+		height: 15rem;
+	}
+}
+
+
+
